@@ -60,10 +60,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('title'.tr()),
       ),
       body: Center(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Row(
@@ -86,7 +87,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            Text(lang.name).tr(),
+            Text('name'.tr()),
+            Text('address'.tr()),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
